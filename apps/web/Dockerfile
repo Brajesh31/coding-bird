@@ -1,5 +1,5 @@
 # Build from the monorepo root:
-#   docker build -f apps/web/Dockerfile -t codingducks-web .
+#   docker build -f apps/web/Dockerfile -t coding-bird-web .
 
 # ============================================
 # STAGE 1: Base

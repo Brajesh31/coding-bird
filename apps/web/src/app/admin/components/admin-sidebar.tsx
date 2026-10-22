@@ -29,7 +29,7 @@ export function AdminSidebar() {
           <Shield className="text-destructive size-5" />
         </div>
         <div>
-          <h1 className="text-sm font-semibold">Coding Ducks Admin</h1>
+          <h1 className="text-sm font-semibold">Coding Bird Admin</h1>
           <p className="text-muted-foreground text-xs">Manage content</p>
         </div>
       </div>

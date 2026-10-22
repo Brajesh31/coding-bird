@@ -10,6 +10,7 @@ import {
 
 import "~/app/styles.css";
 
+import { CommandPalette } from "~/components/command-palette";
 import { Providers } from "~/components/providers";
 import { env } from "~/env";
 import { UmamiScript } from "~/lib/analytics";
@@ -17,8 +18,35 @@ import { cn } from "~/lib/utils";
 
 export const metadata: Metadata = {
   metadataBase: new URL(env.BASE_URL),
-  title: "Coding Ducks",
-  description: "The ultimate coding practice platform for developers.",
+  title: {
+    default: "Coding Bird",
+    template: "%s · Coding Bird",
+  },
+  description:
+    "Interactive developer learning platform: solve algorithmic challenges, build and simulate systems, code collaboratively, and practice real engineering workflows.",
+  applicationName: "Coding Bird",
+  keywords: [
+    "coding",
+    "algorithms",
+    "system design",
+    "developer platform",
+    "collaborative IDE",
+    "interview practice",
+  ],
+  authors: [{ name: "Coding Bird Team" }],
+  openGraph: {
+    title: "Coding Bird",
+    description:
+      "Interactive developer learning platform: solve algorithmic challenges, build and simulate systems, code collaboratively, and practice real engineering workflows.",
+    siteName: "Coding Bird",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Coding Bird",
+    description:
+      "Interactive developer learning platform: solve algorithmic challenges, build and simulate systems, code collaboratively, and practice real engineering workflows.",
+  },
 };
 
 export const viewport: Viewport = {
@@ -75,7 +103,10 @@ export default function RootLayout(props: { children: React.ReactNode }) {
           sourceCodePro.variable,
         )}
       >
-        <Providers>{props.children}</Providers>
+        <Providers>
+          {props.children}
+          <CommandPalette />
+        </Providers>
         <UmamiScript />
       </body>
     </html>

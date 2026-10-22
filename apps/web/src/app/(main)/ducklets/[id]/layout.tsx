@@ -26,15 +26,15 @@ export async function generateMetadata({
     : null;
 
   if (!ducklet) {
-    return { title: "Ducklet · Coding Ducks" };
+    return { title: "Coding Room · Coding Bird" };
   }
 
-  const title = `${ducklet.name} · Coding Ducks`;
+  const title = `${ducklet.name} · Coding Bird`;
   const trimmed = ducklet.description?.trim();
   const description =
     trimmed && trimmed.length > 0
       ? trimmed
-      : "A real-time collaborative coding room on Coding Ducks.";
+      : "A real-time collaborative coding room on Coding Bird.";
   // Auto-captured 1200×630 preview (see `updatePreviewImage`); absolute CDN URL.
   const images = ducklet.previewImage
     ? [{ url: ducklet.previewImage, width: 1200, height: 630, alt: ducklet.name }]

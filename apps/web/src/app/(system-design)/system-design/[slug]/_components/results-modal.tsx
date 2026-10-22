@@ -74,7 +74,7 @@ export function ResultsModal() {
   // Subtle 3-star celebration. Anchored to the stars row so the burst feels
   // tied to the icons rather than dropping from the top of the screen.
   useEffect(() => {
-    if (!results || results.stars !== 3 || hasCelebrated.current) return;
+    if (results?.stars !== 3 || hasCelebrated.current) return;
     hasCelebrated.current = true;
     const el = starsRef.current;
     if (!el) return;

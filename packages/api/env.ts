@@ -6,7 +6,7 @@ export const env = createEnv({
     JUDGE_API_URL: z
       .string()
       .url()
-      .default("https://judge.nareshkhatri.dev/api/v1"),
+      .default("https://judge.codingbird.dev/api/v1"),
     JUDGE_API_TOKEN: z.string().min(1),
   },
 

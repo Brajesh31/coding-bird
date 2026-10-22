@@ -14,11 +14,11 @@ export async function generateMetadata({
   const level = getLevelBySlug(slug);
 
   if (!level) {
-    return { title: "System Design · Coding Ducks" };
+    return { title: "System Design · Coding Bird" };
   }
 
-  const title = `${level.title} · System Design · Coding Ducks`;
-  const description = `Design a scalable ${level.title} system architecture. A ${level.difficulty} system design challenge on Coding Ducks.`;
+  const title = `${level.title} · System Design · Coding Bird`;
+  const description = `Design a scalable ${level.title} system architecture. A ${level.difficulty} system design challenge on Coding Bird.`;
 
   return {
     title,

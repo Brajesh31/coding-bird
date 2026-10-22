@@ -104,9 +104,9 @@ export function CreateDuckletDialog({
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="sm:max-w-[640px]">
         <DialogHeader>
-          <DialogTitle>Create a Ducklet</DialogTitle>
+          <DialogTitle>Create a Room</DialogTitle>
           <DialogDescription>
-            Pick a starter template and start coding together.
+            Pick a starter template and start coding collaboratively.
           </DialogDescription>
         </DialogHeader>
 
@@ -145,12 +145,12 @@ export function CreateDuckletDialog({
           </div>
 
           <div className="grid gap-2">
-            <Label htmlFor="ducklet-name">Ducklet name</Label>
+            <Label htmlFor="ducklet-name">Room name</Label>
             <Input
               id="ducklet-name"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              placeholder="e.g. Interview with John"
+              placeholder="e.g. Interview with Alex / Architecture Review"
               onKeyDown={(e) => e.key === "Enter" && handleCreate()}
               autoFocus
             />
@@ -172,7 +172,7 @@ export function CreateDuckletDialog({
             {createMutation.isPending && (
               <Loader2 className="mr-2 size-4 animate-spin" />
             )}
-            {createMutation.isPending ? "Creating…" : "Create Ducklet"}
+            {createMutation.isPending ? "Creating…" : "Create Room"}
           </Button>
         </DialogFooter>
       </DialogContent>

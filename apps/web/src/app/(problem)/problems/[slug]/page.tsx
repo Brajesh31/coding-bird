@@ -26,10 +26,10 @@ export async function generateMetadata({
     .catch(() => null);
 
   if (!problem) {
-    return { title: "Problem not found · Coding Ducks" };
+    return { title: "Problem not found · Coding Bird" };
   }
 
-  const title = `${problem.title} · Coding Ducks`;
+  const title = `${problem.title} · Coding Bird`;
   const description = excerpt(problem.description);
 
   return {

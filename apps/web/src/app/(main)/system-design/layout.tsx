@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "System Design | Coding Ducks",
+  title: "System Design",
   description:
-    "Practice system design with interactive drag-and-drop architecture puzzles and real-time traffic simulation.",
+    "Master system architecture with interactive drag-and-drop puzzles and real-time traffic simulation on Coding Bird.",
 };
 
 export default function SystemDesignLayout({

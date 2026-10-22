@@ -146,8 +146,8 @@ export default function GuestDuckletPage({
   if (!support.checked || isDuckletLoading) {
     return (
       <div className="flex h-[100dvh] items-center justify-center">
-        <div className="text-muted-foreground animate-pulse">
-          Loading ducklet...
+        <div className="text-muted-foreground animate-pulse text-sm">
+          Loading coding room...
         </div>
       </div>
     );
@@ -157,12 +157,12 @@ export default function GuestDuckletPage({
     return (
       <div className="flex h-[100dvh] flex-col items-center justify-center gap-4">
         <h2 className="text-destructive text-xl font-bold">
-          Error loading ducklet
+          Error loading room
         </h2>
-        <p className="text-muted-foreground">
-          {error?.message ?? "Ducklet not found"}
+        <p className="text-muted-foreground text-sm">
+          {error?.message ?? "Coding room not found"}
         </p>
-        <Button onClick={() => router.push("/ducklets")}>Back to List</Button>
+        <Button onClick={() => router.push("/ducklets")}>Back to Rooms</Button>
       </div>
     );
   }
@@ -191,7 +191,7 @@ export default function GuestDuckletPage({
                   </Badge>
                 </TooltipTrigger>
                 <TooltipContent className="max-w-xs">
-                  You're viewing this public ducklet as a guest. It runs locally
+                  You're viewing this public room as a guest. It runs locally
                   in your browser; edits won't be saved or synced — request
                   access to collaborate.
                 </TooltipContent>

@@ -3,25 +3,21 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useQuery } from "@tanstack/react-query";
-import { Bookmark, CheckCircle, Circle, Loader2, Search } from "lucide-react";
+import { Bookmark, CheckCircle, Circle, Loader2, Search, Shuffle } from "lucide-react";
 
 import { authClient } from "~/auth/client";
 import { BookmarkButton } from "~/components/bookmark-button";
 import { DIFFICULTY_COLORS } from "~/components/difficulty-badge";
 import { Badge } from "~/components/ui/badge";
+import { Button } from "~/components/ui/button";
 import { Input } from "~/components/ui/input";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "~/components/ui/select";
 import { cn } from "~/lib/utils";
 import { useTRPC } from "~/trpc/react";
 
 export default function ProblemsPage() {
+  const router = useRouter();
   const trpc = useTRPC();
   const { data: session } = authClient.useSession();
   const [tab, setTab] = useState<"all" | "bookmarks">("all");
@@ -49,32 +45,34 @@ export default function ProblemsPage() {
   return (
     <div className="container mx-auto max-w-7xl px-4 py-8">
       <div className="mb-8">
-        <h1 className="mb-2 text-3xl font-bold">Problems</h1>
-        <p className="text-muted-foreground">
-          Practice coding problems and improve your skills
+        <h1 className="mb-2 text-3xl font-bold tracking-tight">Algorithmic Challenges</h1>
+        <p className="text-muted-foreground text-sm">
+          Practice problem-solving across 10 programming languages with automated driver judging and real-time verdicts.
         </p>
       </div>
 
       {/* Tabs */}
       <div className="mb-6 flex items-center gap-6 border-b">
-        <button type="button"
+        <button
+          type="button"
           onClick={() => setTab("all")}
           className={cn(
             "-mb-px border-b-2 pb-2.5 text-sm font-medium transition-colors",
             tab === "all"
-              ? "border-primary text-foreground"
+              ? "border-primary text-foreground font-semibold"
               : "text-muted-foreground hover:text-foreground border-transparent",
           )}
         >
-          All Problems
+          All Problems ({data?.items.length ?? 0})
         </button>
         {session && (
-          <button type="button"
+          <button
+            type="button"
             onClick={() => setTab("bookmarks")}
             className={cn(
               "-mb-px flex items-center gap-1.5 border-b-2 pb-2.5 text-sm font-medium transition-colors",
               tab === "bookmarks"
-                ? "border-primary text-foreground"
+                ? "border-primary text-foreground font-semibold"
                 : "text-muted-foreground hover:text-foreground border-transparent",
             )}
           >
@@ -86,29 +84,56 @@ export default function ProblemsPage() {
 
       {tab === "all" ? (
         <>
-          {/* Filters */}
-          <div className="mb-6 flex flex-col gap-4 sm:flex-row">
-            <div className="relative max-w-sm flex-1">
-              <Search className="text-muted-foreground absolute top-1/2 left-3 size-4 -translate-y-1/2" />
-              <Input
-                placeholder="Search problems..."
-                value={search}
-                onChange={(e) => setSearch(e.target.value)}
-                className="pl-9"
-              />
+          {/* Filters & Actions */}
+          <div className="mb-6 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+            <div className="flex flex-1 flex-wrap items-center gap-3">
+              <div className="relative min-w-[240px] flex-1 max-w-sm">
+                <Search className="text-muted-foreground absolute top-1/2 left-3 size-4 -translate-y-1/2" />
+                <Input
+                  placeholder="Search problems by name or tag..."
+                  value={search}
+                  onChange={(e) => setSearch(e.target.value)}
+                  className="pl-9 h-9"
+                />
+              </div>
+
+              {/* Quick difficulty pills */}
+              <div className="flex items-center gap-1 rounded-md border border-border p-1 bg-card/60">
+                {(["all", "easy", "medium", "hard"] as const).map((diff) => {
+                  const isSelected = (!difficulty && diff === "all") || difficulty === diff;
+                  return (
+                    <button
+                      key={diff}
+                      type="button"
+                      onClick={() => setDifficulty(diff === "all" ? undefined : diff)}
+                      className={cn(
+                        "rounded px-2.5 py-1 text-xs font-medium capitalize transition-colors",
+                        isSelected
+                          ? "bg-accent text-foreground font-semibold shadow-2xs"
+                          : "text-muted-foreground hover:text-foreground",
+                      )}
+                    >
+                      {diff}
+                    </button>
+                  );
+                })}
+              </div>
             </div>
 
-            <Select value={difficulty} onValueChange={setDifficulty}>
-              <SelectTrigger className="w-full sm:w-40">
-                <SelectValue placeholder="Difficulty" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="all">All</SelectItem>
-                <SelectItem value="easy">Easy</SelectItem>
-                <SelectItem value="medium">Medium</SelectItem>
-                <SelectItem value="hard">Hard</SelectItem>
-              </SelectContent>
-            </Select>
+            {data?.items && data.items.length > 0 && (
+              <Button
+                variant="outline"
+                size="sm"
+                className="gap-1.5 text-xs border-border shrink-0"
+                onClick={() => {
+                  const randomPick = data.items[Math.floor(Math.random() * data.items.length)];
+                  if (randomPick) router.push(`/problems/${randomPick.slug}`);
+                }}
+              >
+                <Shuffle className="size-3.5 text-primary" />
+                <span>Pick Random</span>
+              </Button>
+            )}
           </div>
 
           {/* Problems Table */}

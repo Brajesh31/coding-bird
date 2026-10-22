@@ -3,7 +3,7 @@
 services:
   db:
     image: postgres:15-alpine
-    container_name: codingducks-db
+    container_name: codingbird-db
     restart: unless-stopped
     ports:
       - "5433:5432"
@@ -20,11 +20,11 @@ services:
       - POSTGRES_PASSWORD=dev
       - POSTGRES_DB=codingducks
     networks:
-      - codingducks-network
+      - codingbird-network
 
   redis:
     image: redis:7-alpine
-    container_name: codingducks-redis
+    container_name: codingbird-redis
     restart: unless-stopped
     ports:
       - "6380:6379"
@@ -37,12 +37,12 @@ services:
       retries: 5
     command: redis-server --appendonly yes --maxmemory 256mb
     networks:
-      - codingducks-network
+      - codingbird-network
 
 volumes:
   postgres_data:
   redis_data:
 
 networks:
-  codingducks-network:
+  codingbird-network:
     driver: bridge

@@ -2,9 +2,10 @@
 
 import type * as React from "react";
 import { createContext, use, useCallback, useMemo, useState } from "react";
-import { Loader2, Terminal } from "lucide-react";
+import { Loader2 } from "lucide-react";
 
 import { authClient } from "~/auth/client";
+import { CodingBirdIcon } from "~/components/brand/logo";
 import {
   Dialog,
   DialogContent,
@@ -37,14 +38,14 @@ function writeLastProvider(provider: Provider) {
   }
 }
 
-type OpenOptions = {
+interface OpenOptions {
   source: string;
   callbackURL?: string;
-};
+}
 
-type SignInContextValue = {
+interface SignInContextValue {
   openSignIn: (opts: OpenOptions) => void;
-};
+}
 
 const SignInContext = createContext<SignInContextValue | null>(null);
 
@@ -132,15 +133,15 @@ function SignInDialog({
     >
       <DialogContent className="sm:max-w-md">
         <div className="flex flex-col items-center gap-5 pt-2 pb-1 text-center">
-          <div className="bg-primary text-primary-foreground flex size-12 items-center justify-center rounded-xl">
-            <Terminal size={24} strokeWidth={3} />
+          <div className="flex size-14 items-center justify-center rounded-2xl border border-white/10 bg-white/[0.04] p-2 shadow-sm">
+            <CodingBirdIcon size={34} />
           </div>
           <div className="flex flex-col gap-1.5">
-            <DialogTitle className="text-xl">
-              Welcome to Coding Ducks
+            <DialogTitle className="text-xl font-bold">
+              Welcome to Coding Bird
             </DialogTitle>
             <DialogDescription>
-              Sign in to save progress, submit solutions, and join ducklets.
+              Sign in to save progress, submit solutions, and collaborate in live coding rooms.
             </DialogDescription>
           </div>
 

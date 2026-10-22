@@ -63,5 +63,9 @@ export const uploadFile = async (
 };
 
 export const getPublicUrl = (key: string) => {
-  return `https://cd-cdn.nareshkhatri.dev/${key}`;
+  if (env.R2_PUBLIC_URL) {
+    const base = env.R2_PUBLIC_URL.replace(/\/+$/, "");
+    return `${base}/${key}`;
+  }
+  return `https://cdn.codingbird.dev/${key}`;
 };

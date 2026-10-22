@@ -50,7 +50,11 @@ export async function POST(req: Request) {
 
   let body: CompletionBody;
   try {
-    body = (await req.json()) as CompletionBody;
+    const raw = await req.json();
+    if (!raw || typeof raw !== "object") {
+      return NextResponse.json({ error: "invalid body" }, { status: 400 });
+    }
+    body = raw as CompletionBody;
   } catch {
     return NextResponse.json({ error: "invalid body" }, { status: 400 });
   }

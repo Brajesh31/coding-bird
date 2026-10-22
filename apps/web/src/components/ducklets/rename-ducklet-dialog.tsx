@@ -48,7 +48,7 @@ export function RenameDuckletDialog({
     trpc.room.update.mutationOptions({
       onSuccess: (data) => {
         if (!data) return;
-        toast.success("Ducklet renamed");
+        toast.success("Room renamed");
 
         const byIdKey = trpc.room.byId.queryKey({ id: roomId });
         queryClient.setQueryData(byIdKey, (prev) =>
@@ -81,15 +81,15 @@ export function RenameDuckletDialog({
       <DialogContent>
         <form onSubmit={handleSubmit}>
           <DialogHeader>
-            <DialogTitle>Rename Ducklet</DialogTitle>
+            <DialogTitle>Rename Room</DialogTitle>
             <DialogDescription>
-              Give your ducklet a clearer name.
+              Give your coding room a clearer name.
             </DialogDescription>
           </DialogHeader>
           <div className="grid gap-2 py-4">
-            <Label htmlFor="ducklet-name">Name</Label>
+            <Label htmlFor="room-name">Name</Label>
             <Input
-              id="ducklet-name"
+              id="room-name"
               value={name}
               onChange={(e) => setName(e.target.value)}
               maxLength={100}

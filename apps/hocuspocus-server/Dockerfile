@@ -1,5 +1,5 @@
 # Build from the monorepo root:
-#   docker build -f apps/hocuspocus-server/Dockerfile -t codingducks-hocuspocus .
+#   docker build -f apps/hocuspocus-server/Dockerfile -t coding-bird-hocuspocus .
 
 # ============================================
 # STAGE 1: Base

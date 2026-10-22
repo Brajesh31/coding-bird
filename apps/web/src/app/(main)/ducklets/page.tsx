@@ -152,10 +152,10 @@ export default function DuckletsPage() {
       <div className="mb-12 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <h1 className="text-4xl font-extrabold tracking-tight lg:text-5xl">
-            Ducklets
+            Coding Rooms
           </h1>
           <p className="text-muted-foreground mt-3 text-lg">
-            Collaborative coding rooms for pair programming and interviews.
+            Real-time collaborative workspaces for pair programming and interviews.
           </p>
         </div>
 
@@ -165,7 +165,7 @@ export default function DuckletsPage() {
           onClick={() => setIsCreateOpen(true)}
         >
           <Plus className="mr-2 size-5" />
-          New Ducklet
+          New Room
         </Button>
       </div>
 
@@ -176,7 +176,7 @@ export default function DuckletsPage() {
           <Search className="text-muted-foreground absolute top-1/2 left-3 size-4 -translate-y-1/2" />
           <Input
             type="search"
-            placeholder="Search ducklets…"
+            placeholder="Search rooms…"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             className="pl-9"
@@ -222,16 +222,16 @@ export default function DuckletsPage() {
             <Plus className="text-muted-foreground size-10" />
           </div>
           <h3 className="text-2xl font-semibold">
-            {debouncedSearch ? "No matches" : "No ducklets found"}
+            {debouncedSearch ? "No matches" : "No rooms found"}
           </h3>
           <p className="text-muted-foreground mt-2 mb-8 max-w-sm">
             {debouncedSearch
               ? `Nothing matches "${debouncedSearch}". Try a different name.`
-              : "You haven't created any Ducklets yet. Start your first collaborative coding session now!"}
+              : "You haven't created any coding rooms yet. Start your first collaborative session now!"}
           </p>
           {!debouncedSearch && (
             <Button size="lg" onClick={() => setIsCreateOpen(true)}>
-              Create Your First Ducklet
+              Create Your First Room
             </Button>
           )}
         </m.div>
@@ -385,7 +385,7 @@ function DuckletCard({
                   onClick={() => router.push(`/ducklets/${ducklet.id}`)}
                 >
                   <ExternalLink className="mr-2 size-4" />
-                  Open Ducklet
+                  Open Room
                 </DropdownMenuItem>
                 {isSignedIn && (
                   <DropdownMenuItem
@@ -436,7 +436,7 @@ function DuckletCard({
                 <AlertDialog open={deleteOpen} onOpenChange={setDeleteOpen}>
                   <AlertDialogContent>
                     <AlertDialogHeader>
-                      <AlertDialogTitle>Delete this ducklet?</AlertDialogTitle>
+                      <AlertDialogTitle>Delete this room?</AlertDialogTitle>
                       <AlertDialogDescription>
                         <strong>{ducklet.name}</strong> will be permanently
                         deleted along with its chat history and member access.

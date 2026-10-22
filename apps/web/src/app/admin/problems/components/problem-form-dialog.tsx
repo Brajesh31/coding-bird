@@ -63,9 +63,9 @@ const problemFormSchema = z.object({
   followUp: z.string().optional(),
   difficulty: z.enum(["easy", "medium", "hard"]),
   tags: z.array(z.string()).default([]),
-  timeLimit: z.coerce.number().int().positive().optional(),
-  memoryLimit: z.coerce.number().int().positive().optional(),
-  displayOrder: z.coerce.number().default(0),
+  timeLimit: z.number().int().positive().optional(),
+  memoryLimit: z.number().int().positive().optional(),
+  displayOrder: z.number().default(0),
   isActive: z.boolean().default(true),
   testCases: z
     .array(
@@ -84,7 +84,8 @@ const problemFormSchema = z.object({
   functionSignature: z.any().optional(),
 });
 
-type ProblemFormData = z.infer<typeof problemFormSchema>;
+type ProblemFormInput = z.input<typeof problemFormSchema>;
+type ProblemFormData = z.output<typeof problemFormSchema>;
 
 const LANGUAGES = [
   { key: "py", label: "Python" },
@@ -284,7 +285,7 @@ export function ProblemFormDialog({
     form.setValue("starterCode", newStarterCode);
   };
 
-  const form = useForm<ProblemFormData>({
+  const form = useForm({
     resolver: zodResolver(problemFormSchema),
     defaultValues: {
       title: "",
@@ -404,18 +405,18 @@ export function ProblemFormDialog({
     }
   };
 
-  const tags = form.watch("tags");
+  const tags = form.watch("tags") ?? [];
   const addTag = (tag: string) => {
     const trimmed = tag.trim().toLowerCase();
     if (trimmed && !tags.includes(trimmed)) {
-      const currentTags = form.getValues("tags");
+      const currentTags = form.getValues("tags") ?? [];
       form.setValue("tags", [...currentTags, trimmed]);
     }
     setTagsInput("");
   };
 
   const removeTag = (tagToRemove: string) => {
-    const currentTags = form.getValues("tags");
+    const currentTags = form.getValues("tags") ?? [];
     form.setValue(
       "tags",
       currentTags.filter((t) => t !== tagToRemove),

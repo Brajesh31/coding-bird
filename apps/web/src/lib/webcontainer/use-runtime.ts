@@ -351,7 +351,7 @@ export function useWebContainerRuntime({
       setWebContainer(null);
       void teardownWebContainer();
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+     
   }, [enabled, ydoc]);
 
   return {

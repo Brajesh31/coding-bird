@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Ducklets · Coding Ducks",
+  title: "Collaborative Rooms",
   description:
-    "Real-time collaborative coding rooms for pair programming and interviews.",
+    "Real-time collaborative coding rooms for pair programming and technical interviews on Coding Bird.",
 };
 
 export default function DuckletsLayout({

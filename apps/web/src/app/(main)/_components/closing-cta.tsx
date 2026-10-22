@@ -22,33 +22,32 @@ export function ClosingCta() {
           transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
         >
           <h2 className="text-4xl leading-[1.05] font-black tracking-tight text-balance text-white md:text-6xl">
-            Ready to start
+            Ready to sharpen
             <br />
-            <span className="bg-gradient-to-r from-fuchsia-400 via-violet-400 to-fuchsia-300 bg-clip-text text-transparent">
-              shipping code?
+            <span className="bg-gradient-to-r from-sky-400 via-indigo-300 to-cyan-300 bg-clip-text text-transparent">
+              your engineering edge?
             </span>
           </h2>
-          <p className="mx-auto mt-6 max-w-md text-base text-neutral-400">
-            Join the playground where coders practice, battle, and build together
-            — in real time.
+          <p className="mx-auto mt-6 max-w-lg text-base text-neutral-400">
+            Solve algorithmic problems, simulate distributed system architectures, and collaborate with your peers in real-time rooms.
           </p>
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
             <Link href="/problems">
               <Button
                 size="lg"
-                className="group bg-primary hover:bg-primary/90 text-white shadow-[0_0_30px_-5px_rgba(157,78,221,0.7)]"
+                className="group bg-primary hover:bg-primary/90 text-primary-foreground font-semibold shadow-md"
               >
-                Start coding
-                <ArrowRight className="ml-1 size-4 transition-transform duration-300 group-hover:translate-x-1" />
+                Start Coding
+                <ArrowRight className="ml-1.5 size-4 transition-transform duration-300 group-hover:translate-x-1" />
               </Button>
             </Link>
             <Link href="/ducklets">
               <Button
                 size="lg"
                 variant="outline"
-                className="border-white/15 bg-white/[0.02] text-neutral-200 hover:border-fuchsia-400/30 hover:bg-white/5 hover:text-white"
+                className="border-border bg-card/60 text-foreground hover:bg-accent hover:border-primary/40 font-medium backdrop-blur-sm"
               >
-                Open a Ducklet
+                Start a Coding Room
               </Button>
             </Link>
           </div>

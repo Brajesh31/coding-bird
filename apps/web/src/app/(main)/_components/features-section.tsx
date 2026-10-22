@@ -19,43 +19,43 @@ interface Feature {
 const FEATURES: Feature[] = [
   {
     icon: Code2,
-    name: "Practice Problems",
+    name: "Algorithmic Challenges",
     description:
-      "Hundreds of LeetCode-style challenges with real test cases across Python, JavaScript, Java, and C++. Instant feedback, every submission.",
+      "Solve algorithmic problems in 10 languages (Python, TypeScript, C++, Rust, Go, Java, C, Ruby, PHP). Self-contained drivers run your code against strict test suites.",
     href: "/problems",
     cta: "Browse problems",
     className: "lg:col-span-2",
-    glow: "rgba(157,78,221,0.22)",
-  },
-  {
-    icon: Users,
-    name: "Ducklets",
-    description:
-      "Real-time collaborative editors. Code together with a shared cursor, live output, and chat.",
-    href: "/ducklets",
-    cta: "Open a Ducklet",
-    className: "lg:col-span-1",
-    glow: "rgba(255,41,117,0.2)",
-  },
-  {
-    icon: Palette,
-    name: "UI Battles",
-    description:
-      "Recreate a design with HTML & CSS and go head-to-head with other developers.",
-    href: "/battles",
-    cta: "Enter a battle",
-    className: "lg:col-span-1",
-    glow: "rgba(255,41,117,0.2)",
+    glow: "rgba(56,189,248,0.18)",
   },
   {
     icon: Network,
-    name: "System Design",
+    name: "System Design Simulator",
     description:
-      "Drag, drop, and wire up architectures on an interactive canvas — then run a traffic simulation to see if your design holds up.",
+      "Wire up distributed architectures on a visual canvas with load balancers, caches, and queues. Run deterministic client-side simulations to measure latency, uptime, and cost.",
     href: "/system-design",
-    cta: "Start designing",
+    cta: "Simulate architectures",
+    className: "lg:col-span-1",
+    glow: "rgba(99,102,241,0.20)",
+  },
+  {
+    icon: Users,
+    name: "Collaborative Coding Rooms",
+    description:
+      "Spin up in-browser IDE rooms powered by WebContainer. Pair program with real-time shared cursors, live terminal execution, and built-in team chat.",
+    href: "/ducklets",
+    cta: "Launch a room",
+    className: "lg:col-span-1",
+    glow: "rgba(14,165,233,0.18)",
+  },
+  {
+    icon: Palette,
+    name: "Machine Coding Challenges",
+    description:
+      "Build production-grade components and real-world frontend challenges (React, TypeScript) with live in-browser preview and automated unit test runners.",
+    href: "/machine-coding",
+    cta: "Practice machine coding",
     className: "lg:col-span-2",
-    glow: "rgba(157,78,221,0.22)",
+    glow: "rgba(56,189,248,0.18)",
   },
 ];
 

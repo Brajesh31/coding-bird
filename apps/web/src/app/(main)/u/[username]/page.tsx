@@ -9,8 +9,8 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { username } = await params;
   return {
-    title: `${username} | Coding Ducks`,
-    description: `View ${username}'s profile, submissions, and progress on Coding Ducks.`,
+    title: `${username} · Coding Bird`,
+    description: `View ${username}'s profile, submissions, and progress on Coding Bird.`,
   };
 }
 

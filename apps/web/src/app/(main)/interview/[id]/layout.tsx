@@ -9,7 +9,7 @@ interface LayoutProps {
  * preview to attach — a generic title is all a crawler should ever see.
  */
 export const metadata: Metadata = {
-  title: "Interview · Coding Ducks",
+  title: "Interview",
 };
 
 export default function InterviewLayout({ children }: LayoutProps) {

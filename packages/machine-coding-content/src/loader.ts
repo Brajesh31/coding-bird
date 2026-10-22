@@ -28,7 +28,24 @@ import type {
   MachineCodingVariant,
 } from "./types";
 
-const PROBLEMS_DIR = join(dirname(fileURLToPath(import.meta.url)), "problems");
+function resolveProblemsDir(): string {
+  const direct = join(dirname(fileURLToPath(import.meta.url)), "problems");
+  if (existsSync(direct)) return direct;
+
+  const candidates = [
+    join(process.cwd(), "packages/machine-coding-content/src/problems"),
+    join(process.cwd(), "../../packages/machine-coding-content/src/problems"),
+    join(process.cwd(), "../packages/machine-coding-content/src/problems"),
+  ];
+
+  for (const candidate of candidates) {
+    if (existsSync(candidate)) return candidate;
+  }
+
+  return direct;
+}
+
+const PROBLEMS_DIR = resolveProblemsDir();
 
 /** A non-base variant declared in a manifest; its files live in `<slug>/<dir>`. */
 export interface VariantDef {

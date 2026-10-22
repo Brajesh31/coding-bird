@@ -11,10 +11,10 @@ interface Stat {
 }
 
 const STATS: Stat[] = [
-  { value: 500, suffix: "+", label: "Coding problems" },
-  { value: 120, suffix: "K", label: "Submissions judged" },
-  { value: 4, suffix: "", label: "Languages supported" },
-  { value: 99, suffix: "%", label: "Uptime, real-time sync" },
+  { value: 10, suffix: "", label: "Languages supported" },
+  { value: 10, suffix: "", label: "System design levels" },
+  { value: 100, suffix: "%", label: "In-browser WebContainer IDE" },
+  { value: 99, suffix: ".9%", label: "Real-time CRDT sync" },
 ];
 
 /** Eases a number from 0 → target once the element scrolls into view. */

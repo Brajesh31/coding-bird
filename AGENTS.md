@@ -4,7 +4,7 @@ Canonical guidance for AI coding agents (Claude Code, Cursor, Copilot, etc.) wor
 
 ## What this is
 
-Coding Ducks — a real-time coding platform in a Turborepo + pnpm monorepo. Four product surfaces: **Problems** (LeetCode-style multi-language judging), **Ducklets** (real-time collaborative coding rooms with an in-browser WebContainer IDE), **System Design** (drag-and-drop architecture puzzle game with client-side traffic simulation), and **Playground** (scratchpad runner).
+Coding Bird — an interactive developer learning and real-time collaboration platform in a Turborepo + pnpm monorepo. Four product surfaces: **Problems** (multi-language algorithmic judging), **Collaborative Rooms** (real-time coding rooms with an in-browser WebContainer IDE), **System Design** (drag-and-drop architecture puzzle game with client-side traffic simulation), and **Playground** (scratchpad runner).
 
 > ⚠️ The `.agents/*.md` files and `.cursorrules` are **generic, partly-stale boilerplate** (they describe a Hono e-commerce SaaS with `@repo/` packages — none of that is true here). Trust this file, the `README.md`, and the actual code instead. The API is **tRPC v11**, not Hono; internal packages use the **`@acme/`** prefix; web app is **Next.js 16 / React 19**.
 

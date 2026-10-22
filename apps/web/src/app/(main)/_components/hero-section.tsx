@@ -58,33 +58,54 @@ export function HeroSection() {
             {/* Announcement pill */}
             <Link
               href="/system-design"
-              className="group mb-8 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.03] py-1.5 pr-3 pl-4 text-sm text-neutral-300 backdrop-blur transition-colors hover:border-fuchsia-400/40 hover:text-white"
+              className="group mb-8 inline-flex items-center gap-2 rounded-full border border-border bg-card/60 py-1.5 pr-3 pl-4 text-sm text-neutral-300 backdrop-blur transition-colors hover:border-primary/50 hover:text-white"
             >
-              <span className="text-fuchsia-300">✦</span>
-              <span className="font-medium text-white">New</span>
-              <span className="hidden h-3.5 w-px bg-white/15 sm:block" />
-              <span>System Design simulator</span>
-              <ArrowRight className="size-3.5 text-fuchsia-300 transition-transform duration-300 group-hover:translate-x-0.5" />
+              <span className="text-primary font-mono text-xs">01</span>
+              <span className="font-medium text-white">System Design Simulator</span>
+              <span className="hidden h-3.5 w-px bg-border sm:block" />
+              <span className="text-xs text-muted-foreground">Interactive Client-Side Traffic Simulation</span>
+              <ArrowRight className="size-3.5 text-primary transition-transform duration-300 group-hover:translate-x-0.5" />
             </Link>
 
-            <h1 className="text-6xl leading-[0.9] font-black tracking-tight text-white md:text-7xl xl:text-8xl">
-              BUILD. BATTLE.
+            <h1 className="text-5xl leading-[1.0] font-extrabold tracking-tight text-white sm:text-6xl md:text-7xl xl:text-8xl">
+              PRACTICE CODING.
               <br />
-              <span className="bg-gradient-to-r from-fuchsia-400 via-violet-400 to-fuchsia-300 bg-clip-text text-transparent">
-                BELONG.
+              <span className="bg-gradient-to-r from-sky-400 via-indigo-300 to-cyan-300 bg-clip-text text-transparent">
+                SIMULATE SYSTEMS.
               </span>
+              <br />
+              BUILD TOGETHER.
             </h1>
-            <p className="mt-6 max-w-md text-base text-neutral-400 md:text-lg">
-              Problems, UI battles, and real-time collaboration — all in one
-              place.
+            <p className="mt-6 max-w-xl text-base text-neutral-300 md:text-lg leading-relaxed">
+              The developer engineering platform for algorithmic problem solving in 10 languages,
+              interactive distributed system simulations, and browser-native collaborative IDE rooms.
             </p>
-            <div className="mt-8">
+            <div className="mt-8 flex flex-wrap items-center gap-4">
               <Link href="/problems">
                 <Button
                   size="lg"
-                  className="bg-primary hover:bg-primary/90 text-white shadow-[0_0_25px_-5px_rgba(157,78,221,0.7)]"
+                  className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold shadow-md"
                 >
-                  Start coding
+                  Start Coding
+                  <ArrowRight className="ml-2 size-4" />
+                </Button>
+              </Link>
+              <Link href="/system-design">
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="border-border bg-card/40 text-foreground hover:bg-accent hover:border-primary/40 font-medium backdrop-blur-sm"
+                >
+                  System Design Game
+                </Button>
+              </Link>
+              <Link href="/ducklets">
+                <Button
+                  size="lg"
+                  variant="ghost"
+                  className="text-muted-foreground hover:text-foreground font-medium"
+                >
+                  Collaborative Rooms →
                 </Button>
               </Link>
             </div>

@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Problems | Coding Ducks",
+  title: "Problems",
   description:
-    "Browse and solve coding problems across multiple languages with instant online judging.",
+    "Browse and solve coding challenges across multiple languages with instant judging on Coding Bird.",
 };
 
 export default function ProblemsLayout({

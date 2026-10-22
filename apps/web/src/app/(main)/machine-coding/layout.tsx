@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Machine Coding · Coding Ducks",
+  title: "Machine Coding",
   description:
-    "Practice the most-asked machine-coding interview questions in a real in-browser IDE. No login required.",
+    "Practice front-end and full-stack machine-coding interview challenges in a real in-browser IDE on Coding Bird.",
 };
 
 export default function MachineCodingLayout({
