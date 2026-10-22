@@ -31,7 +31,8 @@
     "dotenv-cli": "^10.0.0",
     "prettier": "catalog:",
     "turbo": "^2.6.3",
-    "typescript": "catalog:"
+    "typescript": "catalog:",
+    "vercel": "^65.0.0"
   },
   "pnpm": {
     "overrides": {
