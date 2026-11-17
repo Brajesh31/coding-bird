@@ -1,0 +1,10 @@
+# Default ownership for repository changes.
+* @Brajesh31
+
+# Security-sensitive and operational boundaries.
+ /SECURITY.md @Brajesh31
+ /packages/auth/ @Brajesh31
+ /packages/db/ @Brajesh31
+ /packages/api/ @Brajesh31
+ /apps/hocuspocus-server/ @Brajesh31
+ /.github/workflows/ @Brajesh31
