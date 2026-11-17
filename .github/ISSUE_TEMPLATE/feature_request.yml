@@ -1,0 +1,40 @@
+name: "✨ Feature request"
+description: Propose a user-focused improvement.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Product area
+      options:
+        - Problems / code judge
+        - Collaborative Rooms / Ducklets
+        - System Design
+        - Machine Coding / Playground
+        - Platform / infrastructure
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: User problem
+      description: What is difficult or impossible today?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: List observable outcomes and edge cases.
+  - type: textarea
+    id: risks
+    attributes:
+      label: Security, privacy, and operational impact
