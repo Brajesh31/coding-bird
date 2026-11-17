@@ -19,7 +19,21 @@ flowchart TD
 
 **Accuracy note:** the checked-in CI workflow has lint, format, and typecheck jobs. Separate workflows now run CodeQL analysis on pushes and pull requests, and dependency review on pull requests. Build, general integration tests, and E2E tests are still not configured as required CI jobs.
 
-## 2. 🚀 Deployment sequence
+## 2. 🔐 Separate security and dependency automation
+
+~~~mermaid
+flowchart TD
+  Push[Push to main] --> CodeQL[CodeQL static analysis]
+  PR[Pull request] --> CodeQLPR[CodeQL pull request analysis]
+  PR --> DepReview[Dependency Review]
+  Schedule[Weekly scheduled update] --> Dependabot[Dependabot update proposals]
+  Dependabot --> UpdatePR[Dependency update pull request]
+  UpdatePR --> DepReview
+~~~
+
+CodeQL analyzes JavaScript and TypeScript. Dependency Review runs on pull requests. Dependabot proposes dependency updates on configured schedules. These workflows do not imply that every vulnerability is automatically fixed.
+
+## 3. 🚀 Deployment sequence
 
 ~~~mermaid
 flowchart TD
@@ -36,7 +50,7 @@ flowchart TD
   K --> I
 ~~~
 
-## 3. 🧯 Incident response lifecycle
+## 4. 🧯 Incident response lifecycle
 
 ~~~mermaid
 flowchart TD
@@ -50,7 +64,7 @@ flowchart TD
   H --> I[Write incident review and prevention actions]
 ~~~
 
-## 4. 🔐 Secret rotation sequence
+## 5. 🔐 Secret rotation sequence
 
 ~~~mermaid
 sequenceDiagram
