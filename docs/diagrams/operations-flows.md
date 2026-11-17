@@ -17,7 +17,7 @@ flowchart TD
   R -->|No| H([CI failure])
 ~~~
 
-**Accuracy note:** the checked-in CI currently has lint, format, and typecheck jobs. Build, general integration tests, E2E tests, CodeQL, and dependency review are not part of that workflow unless configured separately.
+**Accuracy note:** the checked-in CI workflow has lint, format, and typecheck jobs. Separate workflows now run CodeQL analysis on pushes and pull requests, and dependency review on pull requests. Build, general integration tests, and E2E tests are still not configured as required CI jobs.
 
 ## 2. 🚀 Deployment sequence
 
