@@ -2,8 +2,8 @@
 * @Brajesh31
 
 # Security-sensitive and operational boundaries.
- /SECURITY.md @Brajesh31
- /packages/auth/ @Brajesh31
+/SECURITY.md @Brajesh31
+/packages/auth/ @Brajesh31
  /packages/db/ @Brajesh31
  /packages/api/ @Brajesh31
  /apps/hocuspocus-server/ @Brajesh31
