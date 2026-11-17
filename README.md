@@ -13,6 +13,8 @@
 [![Stars](https://img.shields.io/github/stars/Brajesh31/coding-bird?style=social)](https://github.com/Brajesh31/coding-bird/stargazers)
 [![Forks](https://img.shields.io/github/forks/Brajesh31/coding-bird?style=social)](https://github.com/Brajesh31/coding-bird/network/members)
 [![Open Issues](https://img.shields.io/github/issues/Brajesh31/coding-bird)](https://github.com/Brajesh31/coding-bird/issues)
+[![Open PRs](https://img.shields.io/github/issues-pr/Brajesh31/coding-bird)](https://github.com/Brajesh31/coding-bird/pulls)
+[![Top Language](https://img.shields.io/github/languages/top/Brajesh31/coding-bird)](https://github.com/Brajesh31/coding-bird)
 [![Node.js](https://img.shields.io/badge/Node.js-23.x-339933?logo=nodedotjs&logoColor=white)](https://nodejs.org/)
 [![pnpm](https://img.shields.io/badge/pnpm-10.19%2B-f69220?logo=pnpm&logoColor=white)](https://pnpm.io/)
 [![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=nextdotjs)](https://nextjs.org/)
@@ -374,4 +376,4 @@ Contributions are welcome. Please ensure that:
 2. Calibration tests pass for any changes impacting the simulation engine.
 3. Code strictly adheres to TypeScript without `any`.
 
-Distributed under the MIT License.
+Original project source code and documentation are licensed under the MIT License. Third-party dependencies, brand assets, and user-submitted content retain their own terms. See [LICENSE](LICENSE) for scope.
