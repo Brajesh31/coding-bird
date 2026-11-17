@@ -38,23 +38,23 @@ Coding Bird integrates four primary engineering experiences into a cohesive Turb
 
 ## 🧭 Table of Contents
 
-- [🎯 Motivation & Target Audience](#-motivation--target-audience)
-- [✨ Core Features](#-core-features)
-- [🏛️ Architecture & Monorepo Layout](#️-architecture--monorepo-layout)
-- [🛠️ Technology Stack](#️-technology-stack)
-- [📋 Prerequisites](#-prerequisites)
-- [🚀 Local Development Setup](#-local-development-setup)
-- [🔐 Environment Configuration](#-environment-configuration)
-- [🗄️ Database Management](#️-database-management)
-- [🔄 Real-Time Collaboration Infrastructure](#-real-time-collaboration-infrastructure)
-- [⚙️ Code Execution Architecture](#️-code-execution-architecture)
-- [🧪 Testing & Quality Assurance](#-testing--quality-assurance)
-- [🛡️ Security Model](#️-security-model)
-- [⚠️ Known Limitations](#️-known-limitations)
-- [🧭 Roadmap](#-roadmap)
-- [📚 Governance & Engineering Documentation](#-repository-governance--engineering-docs)
-- [📊 Flowcharts, UML & Data Diagrams](#-flowcharts-uml--data-diagrams)
-- [🤝 Contributing & License](#-contributing--license)
+- [🎯 Motivation & Target Audience](#motivation--target-audience)
+- [✨ Core Features](#core-features)
+- [🏛️ Architecture & Monorepo Layout](#architecture--monorepo-layout)
+- [🛠️ Technology Stack](#technology-stack)
+- [📋 Prerequisites](#prerequisites)
+- [🚀 Local Development Setup](#local-development-setup)
+- [🔐 Environment Configuration](#environment-configuration)
+- [🗄️ Database Management](#database-management)
+- [🔄 Real-Time Collaboration Infrastructure](#real-time-collaboration-infrastructure)
+- [⚙️ Code Execution Architecture](#code-execution-architecture)
+- [🧪 Testing & Quality Assurance](#testing--quality-assurance)
+- [🛡️ Security Model](#security-model)
+- [⚠️ Known Limitations](#known-limitations)
+- [🧭 Roadmap](#roadmap)
+- [📚 Governance & Engineering Documentation](#repository-governance--engineering-docs)
+- [📊 Flowcharts, UML & Data Diagrams](#flowcharts-uml--data-diagrams)
+- [🤝 Contributing & License](#contributing--license)
 
 ---
 ---
@@ -322,7 +322,7 @@ pnpm format     # Prettier formatting verification
 
 The repository includes project governance, maintainer responsibilities, and contribution standards:
 
-- [Governance](GOVERNANCE.md) · [Maintainers](MAINTAINERS.md) · [Contributing](CONTRIBUTING.md)
+- [Governance](GOVERNANCE.md) · [Maintainers](MAINTAINERS.md) · [Authors](AUTHORS.md) · [Contributing](CONTRIBUTING.md)
 - [Security Policy](SECURITY.md) · [Code of Conduct](CODE_OF_CONDUCT.md) · [Support](SUPPORT.md)
 - [Roadmap](ROADMAP.md) · [Changelog](CHANGELOG.md) · [Citation](CITATION.cff)
 - [Engineering documentation index](docs/README.md)
@@ -361,6 +361,8 @@ Explore the expanded, editable diagram collection:
 - [🗃️ Database overview SVG](docs/assets/database-overview.svg)
 - [🚦 CI/CD pipeline SVG](docs/assets/ci-cd-pipeline.svg)
 - [🧠 Architecture Decision Records](docs/architecture/decisions/README.md)
+- [📡 Observability guidance](docs/operations/observability.md)
+- [⚡ Performance checklist](docs/quality/performance-checklist.md)
 - [🧰 Engineering templates](docs/templates/README.md)
 - [♿ Accessibility checklist](docs/quality/accessibility-checklist.md)
 - [🔐 Secure development checklist](docs/security/secure-development-checklist.md)
