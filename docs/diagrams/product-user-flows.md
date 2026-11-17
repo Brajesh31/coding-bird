@@ -16,10 +16,10 @@ flowchart TD
   Pick --> Rooms[🤝 Collaborative Rooms]
   Pick --> Design[🏗️ System Design]
   Pick --> Machine[💻 Machine Coding]
-  Problems --> ProblemFlow
-  Rooms --> RoomFlow
-  Design --> DesignFlow
-  Machine --> MachineFlow
+  Problems --> ProblemStart[📄 Open problem statement]
+  Rooms --> RoomStart[🔗 Open or create room]
+  Design --> DesignStart[🧱 Choose system-design level]
+  Machine --> MachineStart[🧩 Select machine-coding challenge]
 ~~~
 
 ## 2. 🧩 Algorithmic problem submission and verdict
