@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="t d">
+<title id="t">Coding Bird social preview</title><desc id="d">Social preview artwork describing Coding Bird's developer learning platform.</desc>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0c1530"/><stop offset=".54" stop-color="#392b75"/><stop offset="1" stop-color="#007d83"/></linearGradient><linearGradient id="glow" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#5eead4"/><stop offset="1" stop-color="#93c5fd"/></linearGradient></defs>
+<rect width="1200" height="630" rx="28" fill="url(#bg)"/>
+<circle cx="1040" cy="80" r="230" fill="#5eead4" opacity=".12"/><circle cx="1050" cy="570" r="240" fill="#a78bfa" opacity=".14"/>
+<g fill="none" stroke="url(#glow)" stroke-width="11" stroke-linecap="round"><path d="M950 205c-58-70-170-48-191 38-19 75 50 140 122 115 31-11 50-35 61-61"/><path d="M955 224c55-53 139-29 156 39 15 60-31 113-90 107"/></g>
+<text x="78" y="177" fill="#fff" font-family="Inter,Arial" font-size="78" font-weight="800">Coding Bird</text>
+<text x="82" y="238" fill="#dce7ff" font-family="Inter,Arial" font-size="30">Build. Solve. Design. Collaborate.</text>
+<text x="82" y="296" fill="#b9c8e8" font-family="Inter,Arial" font-size="21">A developer learning and engineering practice platform</text>
+<g font-family="Inter,Arial" font-size="18" font-weight="700">
+<rect x="82" y="376" width="235" height="92" rx="18" fill="#18294b" stroke="#81a9e7"/><text x="105" y="414" fill="#a8e7ff">🧩 Problems</text><text x="105" y="445" fill="#b8c7e2" font-size="14">Multi-language judging</text>
+<rect x="338" y="376" width="250" height="92" rx="18" fill="#18294b" stroke="#81a9e7"/><text x="361" y="414" fill="#d7c5ff">🤝 Collaboration</text><text x="361" y="445" fill="#b8c7e2" font-size="14">Shared realtime coding</text>
+<rect x="609" y="376" width="235" height="92" rx="18" fill="#18294b" stroke="#81a9e7"/><text x="632" y="414" fill="#9af0da">🏗️ System Design</text><text x="632" y="445" fill="#b8c7e2" font-size="14">Architecture simulation</text>
+<rect x="865" y="376" width="250" height="92" rx="18" fill="#18294b" stroke="#81a9e7"/><text x="888" y="414" fill="#ffdfa8">💻 Machine Coding</text><text x="888" y="445" fill="#b8c7e2" font-size="14">Frontend challenges</text>
+</g>
+<text x="82" y="555" fill="#9eb1d3" font-family="Inter,Arial" font-size="16">github.com/Brajesh31/coding-bird</text>
+<text x="82" y="590" fill="#8498bd" font-family="Inter,Arial" font-size="13">Concept artwork · not a screenshot of the running application</text>
+</svg>
