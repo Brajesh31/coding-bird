@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 🔐 Report a security vulnerability privately
+    url: https://github.com/Brajesh31/coding-bird/security/advisories/new
+    about: Do not publish exploit details, secrets, or private user data in a public issue.
+  - name: 🆘 Support and setup help
+    url: https://github.com/Brajesh31/coding-bird/blob/main/SUPPORT.md
+    about: Read the support guide before opening a bug report.
+  - name: 📚 Contribution guidelines
+    url: https://github.com/Brajesh31/coding-bird/blob/main/CONTRIBUTING.md
+    about: Review setup, package boundaries, and validation expectations.
