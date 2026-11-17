@@ -15,7 +15,9 @@ This library contains editable Mermaid sources and original SVG artwork for onbo
 | [Social preview artwork](../assets/social-preview.svg) | SVG | Social preview concept |
 | [Platform pillars](../assets/platform-pillars.svg) | SVG | Four product areas |
 | [Database overview](../assets/database-overview.svg) | SVG | Selected relational relationships |
-| [CI/CD pipeline](../assets/ci-cd-pipeline.svg) | SVG | Existing CI and proposed release gates |
+| [CI/CD pipeline](../assets/ci-cd-pipeline.svg) | SVG | Current checked-in CI jobs |
+| [Architecture decisions](../architecture/decisions/README.md) | ADRs | Current architectural patterns and trade-offs |
+| [Reusable templates](../templates/README.md) | Markdown | ADR, feature, security, incident, release, runbook, test plan |
 
 ## 🧭 Maintenance rules
 
