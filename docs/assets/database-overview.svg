@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1300" height="760" viewBox="0 0 1300 760" role="img" aria-labelledby="t d">
+<title id="t">Coding Bird selected database relationships</title><desc id="d">Selected ER view showing users, profiles, problems, submissions, bookmarks, collaborative rooms, room members, messages, snapshots, challenges, and attempts.</desc>
+<defs><style>.bg{fill:#0d172b}.card{fill:#182b47;stroke:#77a5d6;stroke-width:2}.h{fill:#fff;font:bold 18px Arial}.t{fill:#c9d8ed;font:14px Arial}.edge{stroke:#87b8d9;stroke-width:2;fill:none}.n{fill:#9fb4d0;font:13px Arial}</style></defs>
+<rect class="bg" width="1300" height="760" rx="24"/><text x="48" y="58" class="h" font-size="30">Selected relational model · source-derived entities</text>
+<g>
+<rect class="card" x="500" y="100" width="260" height="100" rx="14"/><text class="h" x="525" y="138">USER</text><text class="t" x="525" y="169">auth user identity</text>
+<rect class="card" x="80" y="100" width="250" height="100" rx="14"/><text class="h" x="105" y="138">USER_PROFILE</text><text class="t" x="105" y="169">username · points · streak</text>
+<rect class="card" x="80" y="300" width="250" height="100" rx="14"/><text class="h" x="105" y="338">PROBLEM</text><text class="t" x="105" y="369">slug · difficulty · test cases</text>
+<rect class="card" x="420" y="300" width="250" height="100" rx="14"/><text class="h" x="445" y="338">SUBMISSION</text><text class="t" x="445" y="369">kind · language · verdict</text>
+<rect class="card" x="760" y="300" width="250" height="100" rx="14"/><text class="h" x="785" y="338">BOOKMARK</text><text class="t" x="785" y="369">user ↔ problem</text>
+<rect class="card" x="500" y="500" width="260" height="100" rx="14"/><text class="h" x="525" y="538">DUCKLET / ROOM</text><text class="t" x="525" y="569">owner · visibility · Y.js state</text>
+<rect class="card" x="80" y="500" width="250" height="100" rx="14"/><text class="h" x="105" y="538">CHALLENGE</text><text class="t" x="105" y="569">front-end task content</text>
+<rect class="card" x="420" y="650" width="250" height="75" rx="14"/><text class="h" x="445" y="682">ROOM MEMBERS / MSGS</text><text class="t" x="445" y="708">roles · requests · chat</text>
+<rect class="card" x="760" y="500" width="250" height="100" rx="14"/><text class="h" x="785" y="538">SYSTEM DESIGN</text><text class="t" x="785" y="569">attempt · graph · metrics</text>
+<rect class="card" x="1060" y="500" width="190" height="100" rx="14"/><text class="h" x="1080" y="538">MACHINE CODING</text><text class="t" x="1080" y="569">attempt + room link</text>
+</g>
+<g class="edge"><path d="M500 150 H330"/><path d="M630 200 V250 H545 V300"/><path d="M500 165 H205 V300"/><path d="M760 150 H885 V300"/><path d="M630 200 V450 H630 V500"/><path d="M500 550 H330 V400"/><path d="M630 600 V650"/><path d="M760 550 H760"/><path d="M760 550 H1010 V550 H1060"/></g>
+<text class="n" x="48" y="735">Simplified subset only. See packages/db/src/schema for complete columns, constraints, optional FKs, and delete behavior.</text>
+</svg>
