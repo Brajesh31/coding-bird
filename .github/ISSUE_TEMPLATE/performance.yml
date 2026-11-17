@@ -1,0 +1,40 @@
+name: "⚡ Performance or reliability report"
+description: Report slow requests, editor lag, judge delays, or service instability.
+title: "[Performance]: "
+labels: ["performance"]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Affected surface
+      options:
+        - Web application
+        - Code judging
+        - Realtime collaboration
+        - System Design
+        - Machine Coding / Playground
+        - Database / storage
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: symptom
+    attributes:
+      label: Observed symptom
+      description: Describe latency, failure rate, resource usage, or user impact.
+    validations:
+      required: true
+  - type: textarea
+    id: measurement
+    attributes:
+      label: Measurements and reproduction
+      description: Include timestamps, approximate request volume, browser/runtime, and sanitized metrics.
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: "Never include auth tokens, private room content, source code belonging to other users, or production secrets."
