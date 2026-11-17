@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430" role="img" aria-labelledby="t d">
+<title id="t">Coding Bird CI pipeline</title><desc id="d">Current GitHub workflow has three parallel jobs: lint, format check, and typecheck.</desc>
+<defs><style>.bg{fill:#0d172b}.box{fill:#182d4b;stroke:#71a9df;stroke-width:2}.txt{fill:#e6efff;font:bold 20px Arial}.sub{fill:#afc3e1;font:15px Arial}.line{stroke:#8fc5ff;stroke-width:3;fill:none}</style><marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0 L9 3 L0 6Z" fill="#8fc5ff"/></marker></defs>
+<rect class="bg" width="1200" height="430" rx="24"/><text x="52" y="60" class="txt" font-size="29">GitHub Actions · current checked-in workflow</text>
+<rect class="box" x="55" y="165" width="220" height="100" rx="16"/><text class="txt" x="85" y="205">Trigger</text><text class="sub" x="85" y="238">push · PR · merge queue</text>
+<rect class="box" x="360" y="165" width="220" height="100" rx="16"/><text class="txt" x="390" y="205">Setup</text><text class="sub" x="390" y="238">Node · pnpm · install</text>
+<rect class="box" x="685" y="85" width="210" height="85" rx="16"/><text class="txt" x="720" y="120">Lint</text><text class="sub" x="720" y="146">pnpm lint + lint:ws</text>
+<rect class="box" x="685" y="195" width="210" height="85" rx="16"/><text class="txt" x="720" y="230">Format</text><text class="sub" x="720" y="256">pnpm format</text>
+<rect class="box" x="685" y="305" width="210" height="85" rx="16"/><text class="txt" x="720" y="340">Typecheck</text><text class="sub" x="720" y="366">pnpm typecheck</text>
+<rect class="box" x="990" y="165" width="165" height="100" rx="16"/><text class="txt" x="1015" y="205">Results</text><text class="sub" x="1015" y="238">pass / fail</text>
+<path class="line" marker-end="url(#ar)" d="M275 215 H360"/><path class="line" marker-end="url(#ar)" d="M580 215 H630 V127 H685"/><path class="line" marker-end="url(#ar)" d="M580 215 H685"/><path class="line" marker-end="url(#ar)" d="M580 215 H630 V347 H685"/><path class="line" marker-end="url(#ar)" d="M895 127 H940 V215 H990"/><path class="line" marker-end="url(#ar)" d="M895 237 H990"/><path class="line" marker-end="url(#ar)" d="M895 347 H940 V215 H990"/>
+<text x="55" y="412" class="sub">Build, full tests, CodeQL, dependency review, and E2E are not shown because they are not configured in this workflow.</text></svg>
