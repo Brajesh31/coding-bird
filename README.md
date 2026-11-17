@@ -1,4 +1,26 @@
-# Coding Bird
+# 🐦 Coding Bird
+
+
+<div align="center">
+
+![Coding Bird banner](docs/assets/coding-bird-banner.svg)
+
+[![CI](https://img.shields.io/github/actions/workflow/status/Brajesh31/coding-bird/ci.yml?branch=main&label=CI&logo=githubactions)](https://github.com/Brajesh31/coding-bird/actions/workflows/ci.yml)
+[![License](https://img.shields.io/github/license/Brajesh31/coding-bird?label=license)](LICENSE)
+[![Last Commit](https://img.shields.io/github/last-commit/Brajesh31/coding-bird?label=last%20commit)](https://github.com/Brajesh31/coding-bird/commits/main)
+[![Stars](https://img.shields.io/github/stars/Brajesh31/coding-bird?style=social)](https://github.com/Brajesh31/coding-bird/stargazers)
+[![Forks](https://img.shields.io/github/forks/Brajesh31/coding-bird?style=social)](https://github.com/Brajesh31/coding-bird/network/members)
+[![Open Issues](https://img.shields.io/github/issues/Brajesh31/coding-bird)](https://github.com/Brajesh31/coding-bird/issues)
+[![Node.js](https://img.shields.io/badge/Node.js-23.x-339933?logo=nodedotjs&logoColor=white)](https://nodejs.org/)
+[![pnpm](https://img.shields.io/badge/pnpm-10.19%2B-f69220?logo=pnpm&logoColor=white)](https://pnpm.io/)
+[![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=nextdotjs)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-19-149eca?logo=react&logoColor=white)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-Strict-3178c6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Turborepo](https://img.shields.io/badge/Monorepo-Turborepo-ef4444?logo=turborepo&logoColor=white)](https://turbo.build/repo)
+
+**Build. Solve. Design. Collaborate.**
+
+</div>
 
 > An interactive developer learning and collaboration platform for solving algorithmic problems, simulating real-world architectures, and coding together in real time.
 
@@ -10,28 +32,30 @@ Coding Bird integrates four primary engineering experiences into a cohesive Turb
 
 ---
 
-## Table of Contents
+## 🧭 Table of Contents
 
-- [Motivation & Target Audience](#motivation--target-audience)
-- [Core Features](#core-features)
-- [Architecture & Monorepo Layout](#architecture--monorepo-layout)
-- [Technology Stack](#technology-stack)
-- [Prerequisites](#prerequisites)
-- [Local Development Setup](#local-development-setup)
-- [Environment Configuration](#environment-configuration)
-- [Database Management](#database-management)
-- [Real-Time Collaboration Infrastructure](#real-time-collaboration-infrastructure)
-- [Code Execution Architecture](#code-execution-architecture)
-- [Testing & Quality Assurance](#testing--quality-assurance)
-- [Deployment](#deployment)
-- [Security Model](#security-model)
-- [Known Limitations](#known-limitations)
-- [Roadmap](#roadmap)
-- [Contributing & License](#contributing--license)
+- [🎯 Motivation & Target Audience](#-motivation--target-audience)
+- [✨ Core Features](#-core-features)
+- [🏛️ Architecture & Monorepo Layout](#️-architecture--monorepo-layout)
+- [🛠️ Technology Stack](#️-technology-stack)
+- [📋 Prerequisites](#-prerequisites)
+- [🚀 Local Development Setup](#-local-development-setup)
+- [🔐 Environment Configuration](#-environment-configuration)
+- [🗄️ Database Management](#️-database-management)
+- [🔄 Real-Time Collaboration Infrastructure](#-real-time-collaboration-infrastructure)
+- [⚙️ Code Execution Architecture](#️-code-execution-architecture)
+- [🧪 Testing & Quality Assurance](#-testing--quality-assurance)
+- [🛡️ Security Model](#️-security-model)
+- [⚠️ Known Limitations](#️-known-limitations)
+- [🧭 Roadmap](#-roadmap)
+- [📚 Governance & Engineering Documentation](#-repository-governance--engineering-docs)
+- [📊 Flowcharts, UML & Data Diagrams](#-flowcharts-uml--data-diagrams)
+- [🤝 Contributing & License](#-contributing--license)
 
 ---
+---
 
-## Motivation & Target Audience
+## 🎯 Motivation & Target Audience
 
 Preparing for software engineering interviews and real-world systems work is often fragmented:
 - Algorithmic platforms only test isolated functions without practical project structure.
@@ -45,32 +69,32 @@ Preparing for software engineering interviews and real-world systems work is oft
 
 ---
 
-## Core Features
+## ✨ Core Features
 
-### 1. Multi-Language Problem Judging
+### 🧩 1. Multi-Language Problem Judging
 - **10 Supported Languages**: Python (`py`), JavaScript (`js`), TypeScript (`ts`), Java (`java`), C++ (`cpp`), C (`c`), Rust (`rs`), Go (`go`), Ruby (`rb`), and PHP (`php`).
 - **Self-Contained Driver Generation**: Test suites and inputs are converted into language-native driver harnesses executed inside an isolated judge runtime.
 - **CodeMirror 6 Editor**: Includes full syntax highlighting, bracket matching, indentation guides, and optional Vim mode.
 
-### 2. Collaborative Coding Rooms
+### 🌐 2. Collaborative Coding Rooms
 - **Real-Time CRDT Document Sync**: Fast, conflict-free synchronization powered by Y.js and a dedicated Hocuspocus WebSocket daemon.
 - **In-Browser WebContainer Runtime**: Executes Node.js environments directly in modern browsers (using WebAssembly and Cross-Origin Isolation).
 - **Access Control & Roles**: Room creators can toggle public/private visibility, invite collaborators with explicit `editor` or `viewer` roles, and audit member lists.
 - **AI-Assisted Ghost Completion**: Optional fill-in-the-middle code completions via Codestral / Mistral API.
 
-### 3. System Design Simulation Engine
+### 🏗️ 3. System Design Simulation Engine
 - **Typed Architectural Blocks**: Clients, Load Balancers, API Servers, Microservices, Redis Caches, Message Queues, Relational & NoSQL Databases, and CDNs.
 - **Deterministic Traffic Simulation**: Evaluates configurations against request rates, read/write distributions, payload sizes, compute latencies, and regional boundaries.
 - **Three-Star Empirical Scoring**: Evaluates designs based on Reliability (uptime, error rate), Performance (p95/p99 latency), and Cost Efficiency.
 - **Calibration-Locked Test Suite**: All built-in levels are tested and asserted via Node's native test runner to guarantee fairness and solvability.
 
-### 4. Machine Coding
+### 💻 4. Machine Coding
 - Pre-configured front-end challenges (e.g., Star Rating, Promise Pool, Tabs, Throttle, Tic-Tac-Toe, Todo List) across Vanilla JS, TypeScript, React, Vue, and Svelte.
 - Automated in-browser test runners that verify component behavior against requirements.
 
 ---
 
-## Architecture & Monorepo Layout
+## 🏛️ Architecture & Monorepo Layout
 
 Coding Bird is structured as a Turborepo monorepo with pnpm workspaces:
 
@@ -90,7 +114,7 @@ coding-bird/
 └── tooling/               # Shared configs for ESLint, Prettier, Tailwind CSS v4, and TypeScript
 ```
 
-### Dependency Rules
+### 📐 Dependency Rules
 - Applications (`apps/*`) depend on internal packages (`packages/*`).
 - Internal packages never import from applications.
 - `packages/db` is backend-only and is strictly forbidden from frontend bundles to prevent leaking database credentials.
@@ -98,7 +122,7 @@ coding-bird/
 
 ---
 
-## Technology Stack
+## 🛠️ Technology Stack
 
 - **Framework**: Next.js 16 (App Router) with Turbopack & React 19
 - **API**: tRPC v11 (SuperJSON transformer, Zod v4, Server-Sent Events subscriptions)
@@ -113,7 +137,7 @@ coding-bird/
 
 ---
 
-## Prerequisites
+## 📋 Prerequisites
 
 - **Node.js**: `^22.12.0` or `^23.0.0`
 - **pnpm**: `^10.19.0` (install via `corepack enable`)
@@ -121,7 +145,7 @@ coding-bird/
 
 ---
 
-## Local Development Setup
+## 🚀 Local Development Setup
 
 1. **Clone the repository**:
    ```bash
@@ -161,7 +185,7 @@ coding-bird/
 
 ---
 
-## Environment Configuration
+## 🔐 Environment Configuration
 
 Key configuration parameters defined in `.env`:
 
@@ -188,7 +212,7 @@ Key configuration parameters defined in `.env`:
 
 ---
 
-## Database Management
+## 🗄️ Database Management
 
 Coding Bird uses **Drizzle ORM** with PostgreSQL. Schema definitions live in [`packages/db/src/schema/`](packages/db/src/schema/).
 
@@ -198,7 +222,7 @@ Coding Bird uses **Drizzle ORM** with PostgreSQL. Schema definitions live in [`p
 
 ---
 
-## Real-Time Collaboration Infrastructure
+## 🔄 Real-Time Collaboration Infrastructure
 
 1. **Authentication Handshake**:
    - The web app requests a cryptographically signed collaboration token via tRPC (`room.getCollabToken`).
@@ -216,7 +240,7 @@ Coding Bird uses **Drizzle ORM** with PostgreSQL. Schema definitions live in [`p
 
 ---
 
-## Code Execution Architecture
+## ⚙️ Code Execution Architecture
 
 ```
 User Code + Language
@@ -244,16 +268,16 @@ Test cases and assertions are compiled into the driver executable server-side. R
 
 ---
 
-## Testing & Quality Assurance
+## 🧪 Testing & Quality Assurance
 
-### 1. System Design Calibration Suite
+### 🎯 1. System Design Calibration Suite
 Validates that each of the 10 system design levels is beatable-but-challenging (asserting optimal designs score 3★, naive designs score ≤2★, and broken designs fail):
 
 ```bash
 pnpm -F @acme/nextjs exec node --test --import ./src/lib/system-design/__tests__/_loader.mjs src/lib/system-design/__tests__/calibration.test.ts
 ```
 
-### 2. Static Analysis & Type Checking
+### ✅ 2. Static Analysis & Type Checking
 ```bash
 pnpm lint       # ESLint across all apps and packages
 pnpm typecheck  # TypeScript check across all packages
@@ -262,7 +286,7 @@ pnpm format     # Prettier formatting verification
 
 ---
 
-## Security Model
+## 🛡️ Security Model
 
 - **Session Authentication**: Handled via Better Auth with HTTP-only cookies and CSRF protection.
 - **Route Authorization**: Next.js proxy middleware guards `/admin` and private surfaces.
@@ -272,7 +296,7 @@ pnpm format     # Prettier formatting verification
 
 ---
 
-## Known Limitations
+## ⚠️ Known Limitations
 
 - **OAuth-First Auth**: Local email/password login is not configured by default; local development uses GitHub or Google OAuth or session testing helpers.
 - **Single-Node Realtime Bus**: In-process event subscriptions use an `EventEmitter` bus. Multi-node clustering requires swapping this for Redis PUB/SUB or Postgres `LISTEN/NOTIFY`.
@@ -280,7 +304,7 @@ pnpm format     # Prettier formatting verification
 
 ---
 
-## Roadmap
+## 🧭 Roadmap
 
 1. **Redis PUB/SUB Realtime Scaling**: Replace single-instance EventEmitter with Redis adapter for multi-instance deployments.
 2. **WebAssembly Local Judge**: Optional client-side WebAssembly execution for basic Python and JavaScript scratchpads.
@@ -290,7 +314,7 @@ pnpm format     # Prettier formatting verification
 ---
 
 
-## 🧭 Repository Governance & Engineering Docs
+## 📚 Repository Governance & Engineering Docs
 
 The repository includes project governance, maintainer responsibilities, and contribution standards:
 
@@ -303,7 +327,7 @@ The repository includes project governance, maintainer responsibilities, and con
 - [Deployment and operations](docs/operations/deployment.md)
 - [Testing strategy](docs/quality/testing-strategy.md)
 
-### Architecture visuals
+### 🖼️ Architecture visuals
 
 ![Coding Bird architecture overview](docs/assets/architecture-overview.svg)
 
@@ -311,7 +335,22 @@ The repository includes project governance, maintainer responsibilities, and con
 
 *These are conceptual diagrams, not application screenshots or proof of production deployment.*
 
-## Contributing & License
+## 📊 Flowcharts, UML & Data Diagrams
+
+Explore the expanded, editable diagram collection:
+
+- [🧭 Diagram index](docs/diagrams/README.md)
+- [🔀 Product and user journey flowcharts](docs/diagrams/product-user-flows.md)
+- [🧩 UML, component, state, and database diagrams](docs/diagrams/uml-and-data-models.md)
+- [🚦 CI/CD, deployment, and incident flows](docs/diagrams/operations-flows.md)
+- [🏗️ Architecture overview SVG](docs/assets/architecture-overview.svg)
+- [🛡️ Trust boundaries SVG](docs/assets/trust-boundaries.svg)
+- [🐦 Project banner SVG](docs/assets/coding-bird-banner.svg)
+- [🖼️ Social preview artwork SVG](docs/assets/social-preview.svg)
+
+The Mermaid diagrams are editable text sources. SVG visuals are original vector artwork. Neither should be interpreted as proof of a production deployment or an application screenshot.
+
+## 🤝 Contributing & License
 
 Contributions are welcome. Please ensure that:
 1. `pnpm typecheck` and `pnpm lint` pass without errors.
