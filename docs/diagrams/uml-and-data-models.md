@@ -217,10 +217,13 @@ These statuses match the declared submission enum. Exact transition timing is co
 
 ~~~mermaid
 stateDiagram-v2
-  [*] --> in_progress
-  in_progress --> completed
-  completed --> revealed
-  revealed --> [*]
+  state "in-progress" as InProgress
+  state "completed" as Completed
+  state "revealed" as Revealed
+  [*] --> InProgress
+  InProgress --> Completed
+  Completed --> Revealed
+  Revealed --> [*]
 ~~~
 
 The database enum contains **in-progress**, **completed**, and **revealed**. Do not assume anonymous client-side attempts create database rows.
