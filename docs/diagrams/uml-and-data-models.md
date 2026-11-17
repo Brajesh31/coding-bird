@@ -37,7 +37,7 @@ flowchart TB
 
 ~~~mermaid
 erDiagram
-  USER ||--|| USER_PROFILE : has
+  USER ||--o| USER_PROFILE : has
   USER ||--o{ SUBMISSION : creates
   PROBLEM ||--o{ SUBMISSION : receives
   USER ||--o{ BOOKMARK : saves
@@ -53,7 +53,7 @@ erDiagram
   USER ||--o{ CHALLENGE_ATTEMPT : makes
   CHALLENGE ||--o{ CHALLENGE_ATTEMPT : receives
   USER ||--o{ MACHINE_CODING_ATTEMPT : practices
-  DUCKLET o|--o{ MACHINE_CODING_ATTEMPT : interview_room
+  DUCKLET o|--o| MACHINE_CODING_ATTEMPT : interview_room
 
   USER {
     text id PK
