@@ -8,7 +8,7 @@ The root `AGENTS.md` states that the only dedicated test suite currently present
 pnpm -F @acme/nextjs test:calibration
 ```
 
-The root CI workflow currently contains lint, format, and typecheck jobs. Re-check workflow YAML and package scripts after future changes.
+The root CI workflow currently contains lint, format, and typecheck jobs. Separate workflows add CodeQL analysis and dependency review, while Dependabot checks configured package ecosystems. These are useful checks but do not replace application build, integration, or E2E coverage. Re-check workflow YAML and package scripts after future changes.
 
 ## Target test pyramid
 
