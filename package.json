@@ -27,12 +27,12 @@
   },
   "devDependencies": {
     "@acme/prettier-config": "workspace:*",
-    "@turbo/gen": "^2.6.3",
+    "@turbo/gen": "^2.11.11",
     "dotenv-cli": "^10.0.0",
     "prettier": "catalog:",
-    "turbo": "^2.6.3",
+    "turbo": "^2.11.11",
     "typescript": "catalog:",
-    "vercel": "^65.0.0"
+    "vercel": "^65.16.0"
   },
   "pnpm": {
     "overrides": {
@@ -45,6 +45,6 @@
     "@codemirror/lang-go": "^6.0.1",
     "@codemirror/lang-php": "^6.0.2",
     "@codemirror/lang-rust": "^6.0.2",
-    "@codemirror/legacy-modes": "^6.5.2"
+    "@codemirror/legacy-modes": "^6.5.5"
   }
 }
