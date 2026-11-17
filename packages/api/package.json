@@ -18,10 +18,10 @@
     "@acme/machine-coding-content": "workspace:*",
     "@acme/storage": "workspace:*",
     "@acme/validators": "workspace:*",
-    "@t3-oss/env-core": "^0.13.8",
+    "@t3-oss/env-core": "^0.13.11",
     "@trpc/server": "catalog:",
-    "drizzle-orm": "^0.45.0",
-    "superjson": "2.2.3",
+    "drizzle-orm": "^0.45.4",
+    "superjson": "2.2.6",
     "zod": "catalog:"
   },
   "devDependencies": {
