@@ -11,6 +11,7 @@ Start with the root [README](../README.md) for product and setup, and [AGENTS.md
 - [Security threat model](security/threat-model.md)
 
 ## Product and diagrams
+- [Authors and attribution](../AUTHORS.md)
 - [Product feature matrix](product/feature-matrix.md)
 - [Diagram and flowchart library](diagrams/README.md)
 - [Architecture decision records](architecture/decisions/README.md)
@@ -22,8 +23,11 @@ Start with the root [README](../README.md) for product and setup, and [AGENTS.md
 - [Accessibility checklist](quality/accessibility-checklist.md)
 
 - [Deployment and operations](operations/deployment.md)
+- [Observability and service health](operations/observability.md)
 - [Release process](operations/release-process.md)
 - [Testing strategy](quality/testing-strategy.md)
+- [Accessibility checklist](quality/accessibility-checklist.md)
+- [Performance checklist](quality/performance-checklist.md)
 - [Glossary](reference/glossary.md)
 
 Keep this index updated when subsystem documents are added or moved. Existing domain-specific guides elsewhere in the repository remain authoritative for their subject.
