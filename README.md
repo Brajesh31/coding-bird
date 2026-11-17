@@ -289,6 +289,28 @@ pnpm format     # Prettier formatting verification
 
 ---
 
+
+## 🧭 Repository Governance & Engineering Docs
+
+The repository includes project governance, maintainer responsibilities, and contribution standards:
+
+- [Governance](GOVERNANCE.md) · [Maintainers](MAINTAINERS.md) · [Contributing](CONTRIBUTING.md)
+- [Security Policy](SECURITY.md) · [Code of Conduct](CODE_OF_CONDUCT.md) · [Support](SUPPORT.md)
+- [Roadmap](ROADMAP.md) · [Changelog](CHANGELOG.md) · [Citation](CITATION.cff)
+- [Engineering documentation index](docs/README.md)
+- [Architecture overview](docs/architecture/README.md)
+- [Threat model](docs/security/threat-model.md)
+- [Deployment and operations](docs/operations/deployment.md)
+- [Testing strategy](docs/quality/testing-strategy.md)
+
+### Architecture visuals
+
+![Coding Bird architecture overview](docs/assets/architecture-overview.svg)
+
+![Coding Bird security trust boundaries](docs/assets/trust-boundaries.svg)
+
+*These are conceptual diagrams, not application screenshots or proof of production deployment.*
+
 ## Contributing & License
 
 Contributions are welcome. Please ensure that:
