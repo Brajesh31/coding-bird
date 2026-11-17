@@ -6,6 +6,8 @@
 ![Coding Bird banner](docs/assets/coding-bird-banner.svg)
 
 [![CI](https://img.shields.io/github/actions/workflow/status/Brajesh31/coding-bird/ci.yml?branch=main&label=CI&logo=githubactions)](https://github.com/Brajesh31/coding-bird/actions/workflows/ci.yml)
+[![CodeQL](https://img.shields.io/github/actions/workflow/status/Brajesh31/coding-bird/codeql.yml?branch=main&label=CodeQL&logo=github)](https://github.com/Brajesh31/coding-bird/actions/workflows/codeql.yml)
+[![Dependabot](https://img.shields.io/badge/dependencies-Dependabot-025e8c?logo=dependabot&logoColor=white)](https://github.com/Brajesh31/coding-bird/network/updates)
 [![License](https://img.shields.io/github/license/Brajesh31/coding-bird?label=license)](LICENSE)
 [![Last Commit](https://img.shields.io/github/last-commit/Brajesh31/coding-bird?label=last%20commit)](https://github.com/Brajesh31/coding-bird/commits/main)
 [![Stars](https://img.shields.io/github/stars/Brajesh31/coding-bird?style=social)](https://github.com/Brajesh31/coding-bird/stargazers)
@@ -333,6 +335,12 @@ The repository includes project governance, maintainer responsibilities, and con
 
 ![Coding Bird security trust boundaries](docs/assets/trust-boundaries.svg)
 
+![Coding Bird platform pillars](docs/assets/platform-pillars.svg)
+
+![Selected database relationships](docs/assets/database-overview.svg)
+
+![Current CI pipeline](docs/assets/ci-cd-pipeline.svg)
+
 *These are conceptual diagrams, not application screenshots or proof of production deployment.*
 
 ## 📊 Flowcharts, UML & Data Diagrams
@@ -347,6 +355,15 @@ Explore the expanded, editable diagram collection:
 - [🛡️ Trust boundaries SVG](docs/assets/trust-boundaries.svg)
 - [🐦 Project banner SVG](docs/assets/coding-bird-banner.svg)
 - [🖼️ Social preview artwork SVG](docs/assets/social-preview.svg)
+- [🧩 Platform pillars SVG](docs/assets/platform-pillars.svg)
+- [🗃️ Database overview SVG](docs/assets/database-overview.svg)
+- [🚦 CI/CD pipeline SVG](docs/assets/ci-cd-pipeline.svg)
+- [🧠 Architecture Decision Records](docs/architecture/decisions/README.md)
+- [🧰 Engineering templates](docs/templates/README.md)
+- [♿ Accessibility checklist](docs/quality/accessibility-checklist.md)
+- [🔐 Secure development checklist](docs/security/secure-development-checklist.md)
+- [🗄️ Backup and restore planning](docs/operations/backup-and-restore.md)
+- [🧩 Product feature matrix](docs/product/feature-matrix.md)
 
 The Mermaid diagrams are editable text sources. SVG visuals are original vector artwork. Neither should be interpreted as proof of a production deployment or an application screenshot.
 
