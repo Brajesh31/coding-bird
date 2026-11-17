@@ -10,7 +10,17 @@ Start with the root [README](../README.md) for product and setup, and [AGENTS.md
 - [Data model and lifecycle](architecture/data-lifecycle.md)
 - [Security threat model](security/threat-model.md)
 
-## Operations and quality
+## Product and diagrams
+- [Product feature matrix](product/feature-matrix.md)
+- [Diagram and flowchart library](diagrams/README.md)
+- [Architecture decision records](architecture/decisions/README.md)
+- [Reusable engineering templates](templates/README.md)
+
+## Security, operations and quality
+- [Secure development checklist](security/secure-development-checklist.md)
+- [Backup and restore planning](operations/backup-and-restore.md)
+- [Accessibility checklist](quality/accessibility-checklist.md)
+
 - [Deployment and operations](operations/deployment.md)
 - [Release process](operations/release-process.md)
 - [Testing strategy](quality/testing-strategy.md)
