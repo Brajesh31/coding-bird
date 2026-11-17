@@ -1,0 +1,48 @@
+name: "🐛 Bug report"
+description: Report a reproducible defect in Coding Bird.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: "Do not include secrets, access tokens, private room content, or personal data."
+  - type: dropdown
+    id: area
+    attributes:
+      label: Affected area
+      options:
+        - Web application
+        - Problems / code judge
+        - Collaborative Rooms / Ducklets
+        - System Design
+        - Machine Coding / Playground
+        - Authentication / API
+        - Database / storage
+        - CI / tooling
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+      description: Include observed and expected behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      placeholder: "1. ...\n2. ...\n3. ..."
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Node/pnpm versions, browser, OS, deployment context, and relevant services.
+  - type: textarea
+    id: logs
+    attributes:
+      label: Sanitized logs
+      description: Remove credentials, cookies, tokens, and personal data.
